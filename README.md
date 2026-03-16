@@ -1,4 +1,4 @@
-# Hi, I'm Yosra Meguebli 👋
+# Hi, I'm Yosra Meguebli 
 
 **Tech Lead · AI Engineer · Full-Stack Developer**  
 *Backend Senior · C Senior · AI Senior · Frontend Proficient · DevOps Operational*
