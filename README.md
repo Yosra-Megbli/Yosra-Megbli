@@ -1,4 +1,4 @@
-# Hi, I'm Yosra Megbli 👋
+# Hi, I'm Yosra Megbli 
 
 **AI Engineer · Backend Developer · Document Intelligence & Multi-Agent Systems**
 
