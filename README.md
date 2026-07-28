@@ -1,139 +1,105 @@
-# Hi, I'm Yosra Meguebli 
+# Hi, I'm Yosra Megbli 👋
 
-**Tech Lead · AI Engineer · Full-Stack Developer**  
-*Backend Senior · C Senior · AI Senior · Frontend Proficient · DevOps Operational*
+**AI Engineer · Backend Developer · Document Intelligence & Multi-Agent Systems**
 
-📍 Tataouine, Tunisia · 🌍 Remote-first · ✉️ yosra.meguebli@yahoo.fr  
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-meguebli--yosra-0A66C2?style=flat&logo=linkedin)](https://www.linkedin.com/in/meguebli-yosra)
+📍 Tataouine, Tunisia · 🌍 Remote-first, open to relocation · ✉️ yosra.meguebli@yahoo.fr · 📞 +216 28 771 979
 
----
-
-##  About Me
-
-PhD candidate in Deep Learning (ENET'COM, Sfax) and hands-on builder of production AI & ERP systems.  
-4+ years as **technical supervisor at ESPRIT** — ranked **#1 CS school in Tunisia & North Africa** — guiding student teams through full-cycle 2D game projects in C each semester.
-
-Since 2025, I simultaneously lead:
-- An **AI document processing platform** (3-person team, LayoutLMv3 + PaddleOCR, 263-field JSON Schema aligned with Tunisian legal frameworks)
-- A **modular SaaS ERP** for Tunisian SMEs (Frappe + React + Next.js + TypeScript, demo in progress)
-
-I own the full stack: **research → architecture → development → DevOps → team lead**.
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-meguebli--yosra-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/meguebli-yosra)
+[![GitHub](https://img.shields.io/badge/GitHub-Yosra--Megbli-181717?style=flat&logo=github&logoColor=white)](https://github.com/Yosra-Megbli)
 
 ---
 
-##  Featured Project
+## About Me
 
-### 🔍 [DocClassify AI — CNN + OCR + ERPNext](https://github.com/Yosra-Megbli/CNN-Fastapi-ERPnext)
+AI Engineer and backend developer specialising in **document intelligence**, **LLM pipelines**, **multi-agent systems**, and **workflow automation**. I build production-grade systems end to end — from model architecture and backend infrastructure to deployment and team leadership.
 
-> AI document classification system with native ERPNext integration
+On a production document pipeline at ARKEYEZ, I designed a 4-module system (OCR → classification → compliance validation → ERP integration) that reached **99.7% accuracy** on a 313-document test set.
 
+I'm currently **available immediately for remote, full-time roles**.
+
+---
+
+## Experience
+
+**AI Engineer & Tech Lead** — ARKEYEZ, Tunisian Startup *(Jan 2026 – Apr 2026)*
+Led a 2-person engineering team while designing and shipping a document intelligence pipeline (Django REST + Celery + Redis) for production-scale processing.
+
+**Freelance AI, NLP & Backend Engineer** — MBM Lab, France *(Oct 2024 – Dec 2025)*
+Built NLP pipelines for medical document extraction (LayoutLMv3, PaddleOCR) and CNN-based classification models with FastAPI backends for client-facing services.
+
+**University Lecturer & Technical Supervisor** — ESPRIT, Tunisia *(Jan 2020 – Sep 2024, full-time)*
+Supervised 100+ students building 2D games in C, with weekly code reviews on memory management and performance.
+
+---
+
+## Featured Projects
+
+### 🧠 [MultiAgent Platform v6](https://github.com/Yosra-Megbli/multiagent-platform-v6)
+Production-ready multi-agent orchestration platform.
 | Feature | Detail |
 |---|---|
-| **Models** | ResNet50 CNN + EasyOCR (FR/EN) + TF-IDF NLP |
-| **Fusion** | CNN+OCR pipeline → +8% accuracy boost |
-| **Accuracy** | 85–92% across 4 document classes |
-| **Speed** | ~2–3s per document |
-| **Integration** | ERPNext REST API · auto-generated AI_Document DocType |
-| **Security** | JWT auth · SHA-256 dedup · Swagger UI |
+| **Orchestration** | LangGraph — parallel agents, aggregator, confidence-based decisions |
+| **Retrieval** | RAG via pgvector |
+| **Reliability** | RBAC, Dead-Letter Queue (DLQ), Human-in-the-Loop (HITL) |
+| **Stack** | FastAPI · PostgreSQL · Celery · Redis · Docker Compose |
+| **LLM** | Groq (Llama 3.3 70B) |
 
-```python
-# Classify a document
-POST /api/v1/classify-multi
-→ { "document_class": "Invoice", "confidence": 0.92, "fusion_applied": true }
-```
+### 💬 [Sophie — AI Sales Agent](https://github.com/Yosra-Megbli/Sales-agent-AI)
+Conversational agent for WhatsApp lead qualification, built for a client-facing use case.
+| Feature | Detail |
+|---|---|
+| **Core** | FastAPI + LangGraph |
+| **Flow** | Bilingual French/Dutch lead qualification |
+| **Integrations** | Airtable CRM, Twilio |
+| **Security** | JWT auth, RBAC, CORS, injection-fix hardening |
 
----
+### 🧾 [AI Invoice Processing (n8n)](https://github.com/Yosra-Megbli/n8n-invoice-ai-agent)
+Automated PDF invoice pipeline with business-rule validation and reporting.
+| Feature | Detail |
+|---|---|
+| **Extraction** | Groq (Llama 3.3 70B), with Gemini fallback |
+| **Validation** | Business-rule engine |
+| **Storage & Reporting** | PostgreSQL, Metabase dashboard |
+| **Alerts** | SMTP |
 
-## 🛠️ Tech Stack
-
-### AI & Machine Learning
-![Python](https://img.shields.io/badge/Python-Senior-3776AB?style=flat&logo=python&logoColor=white)
-![TensorFlow](https://img.shields.io/badge/TensorFlow-2.x-FF6F00?style=flat&logo=tensorflow&logoColor=white)
-![LayoutLMv3](https://img.shields.io/badge/LayoutLMv3-Document_AI-764ABC?style=flat)
-![PaddleOCR](https://img.shields.io/badge/PaddleOCR-OCR_Pipeline-0062B1?style=flat)
-
-**Training & Fine-tuning** · NER Pipelines · TF-IDF · CNN (ResNet50) · EasyOCR · Donut · DiT  
-JSON Schema Draft-07 · Dataset Curation · SHA-256 Dedup
-
-### Backend (Senior)
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat&logo=fastapi&logoColor=white)
-![Django](https://img.shields.io/badge/Django-DRF-092E20?style=flat&logo=django&logoColor=white)
-![ERPNext](https://img.shields.io/badge/ERPNext-v15-0089FF?style=flat)
-
-Python · Django · DRF · Celery · FastAPI · Frappe Framework · ERPNext v14/v15  
-PostgreSQL · Neo4j · Redis · MariaDB · SQLite · MinIO · REST API · JWT · Swagger
-
-### Frontend (Proficient)
-![React](https://img.shields.io/badge/React-TypeScript-61DAFB?style=flat&logo=react&logoColor=black)
-![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat&logo=next.js&logoColor=white)
-
-React · TypeScript · Next.js · Zustand · frappeClient.ts · HTML/CSS · UI/UX Design
-
-### DevOps (Operational)
-![Docker](https://img.shields.io/badge/Docker-Compose-2496ED?style=flat&logo=docker&logoColor=white)
-![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-CI%2FCD-2088FF?style=flat&logo=github-actions&logoColor=white)
-
-Docker Compose · GitHub Actions (5 parallel jobs) · Render · RunPod · systemd · GitFlow
-
-### C (Senior)
-`C / C++` · Systems programming · 2D game architecture · 4+ years ESPRIT projects
+### 🔍 [DocClassify AI — CNN + OCR + ERPNext](https://github.com/Yosra-Megbli/CNN-Fastapi-ERPNext)
+AI document classification system with native ERPNext integration.
+| Feature | Detail |
+|---|---|
+| **Models** | ResNet50 CNN + EasyOCR + TF-IDF fusion |
+| **Accuracy** | 85–92% on real-world document sets |
+| **Backend** | FastAPI with JWT authentication |
+| **Integration** | Self-hosted Frappe/ERPNext v15 |
 
 ---
 
-## 💼 Experience Highlights
+## Technical Skills
 
-```
-Jan 2026 – Present   Tech Lead — AI Document Processing Platform [confidential]
-                     3-person team · LayoutLMv3 + PaddleOCR · Django + React
-                     263-field JSON Schema · 24 doc classes · GitHub Actions CI/CD
-
-2025 – Present       Founder · Tech Lead · Full-Stack — SaaS ERP [confidential]
-                     Frappe + React + Next.js + TypeScript · Docker
-                     Agri-food sector · Demo in progress
-
-2025                 Solo Dev — DocClassify AI (open source ↗)
-                     CNN + OCR + NLP + ERPNext · 85–92% accuracy
-
-Jan 2020 –           Technical Supervisor — Practical C Programming
-Sept 2024            ESPRIT (#1 CS Tunisia & North Africa)
-                     Full 2D game projects each semester · weekly code reviews
-```
+**AI / ML:** LangGraph · LayoutLMv3 · PaddleOCR · TensorFlow · ResNet50 · EasyOCR · sentence-transformers · pgvector · HuggingFace
+**LLM APIs:** Groq API · OpenAI-compatible endpoints · HuggingFace Inference API
+**Backend:** Python · FastAPI · Django REST Framework · JWT · REST APIs · pytest
+**AI Infra:** Celery (async, routing, DLQ) · Redis · Docker Compose · GitHub Actions
+**DevOps & Tooling:** GitHub Actions (CI/CD) · Git (branching, ADRs) · Jira automation (Python) · Render · WSL2 · MariaDB · Frappe/ERPNext v15
+**Databases:** PostgreSQL · pgvector · Neo4j · Redis · MariaDB
+**Automation / Integrations:** n8n · Airtable · Twilio API · Metabase · SMTP
+**Security:** JWT · RBAC · CORS · Input validation / injection prevention
+**C / Systems:** Memory management · data structures · performance optimisation
 
 ---
 
-## 🎓 Academic Background
+## Education
 
-| Degree | School | Year |
-|---|---|---|
-| **PhD — Deep Learning** (road accident detection) | ENET'COM, Sfax | 2021 – Present |
-| **Master in CS** — Handwritten math recognition · *Mention Bien* | ENSIT, Tunis | 2020 |
-| **Computer Science Degree** — Software Engineering | ESSTT, Tunis | 2007–2010 |
-
-### 📄 Publication
-**MedPRAI 2020** — *"Deep Learning Architecture for Off-Line Recognition of Handwritten Math Symbols"*  
-[researchgate.net/publication/350128897](https://www.researchgate.net/publication/350128897_Deep_Learning_Architecture_for_Off-Line_Recognition_of_Handwritten_Math_Symbols)
+- **PhD Candidate** — Deep Learning & Accident Detection (on hold), ENET'COM, Sfax *(2021–2024)*
+- **Master's in Computer Science** — ENSIT, Tunis *(2020)*
+- **Bachelor's in Computer Science** — ESSTT, Tunis *(2010)*
+- 📄 Publication: *"Deep Learning Architecture for Offline Recognition of Handwritten Math Symbols"* — MedPRAI 2020 (Springer)
 
 ---
 
-## 📊 Governance & Methodology
+## Languages
 
-When I lead a project, I ship documentation too:
-
-- ✅ Technical Charters (6+ iterative versions)
-- ✅ Architecture Decision Records (ADRs)
-- ✅ Cahiers des Charges (CDC M1 V5.5)
-- ✅ Agile Sprint Backlog (12 weeks · 5 members)
-- ✅ CONTRIBUTING.md · GitFlow workflow
-- ✅ ISO 9001/27001/15489 compliance checklist
-- ✅ Tunisian legal alignment: Code TVA · CNSS · Loi Finances 2025
+🇹🇳 Arabic (Native) · 🇫🇷 French (Professional, B2) · 🇬🇧 English (Professional Working Proficiency)
 
 ---
 
-## 🌍 Languages
-
-🇹🇳 Arabic (native) · 🇫🇷 French (fluent) · 🇬🇧 English (fluent)
-
----
-
-*Available for remote missions: Tech Lead · AI Architect · Senior Full-Stack · Technical Consulting*  
-📬 yosra.meguebli@yahoo.fr
+📫 **Open to remote, full-time opportunities** — feel free to reach out at yosra.meguebli@yahoo.fr
