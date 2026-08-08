@@ -35,7 +35,7 @@ Supervised 100+ students building 2D games in C, with weekly code reviews on mem
 ## Featured Projects
 
 ### 🧠 [MultiAgent Platform v6](https://github.com/Yosra-Megbli/multiagent-platform-v6)
-Production-ready multi-agent orchestration platform.
+Multi-agent orchestration platform architecture.
 | Feature | Detail |
 |---|---|
 | **Orchestration** | LangGraph — parallel agents, aggregator, confidence-based decisions |
@@ -44,14 +44,15 @@ Production-ready multi-agent orchestration platform.
 | **Stack** | FastAPI · PostgreSQL · Celery · Redis · Docker Compose |
 | **LLM** | Groq (Llama 3.3 70B) |
 
-### 💬 [Sophie — AI Sales Agent](https://github.com/Yosra-Megbli/Sales-agent-AI)
-Conversational agent for WhatsApp lead qualification, built for a client-facing use case.
+### 💬 [Sophie — AI Sales Agent (Ecofix)](https://github.com/Yosra-Megbli/Intelligent-Sales-Agent)
+Conversational AI agent qualifying energy-contract leads over Telegram and a web widget (WhatsApp/voice architected, Twilio-ready, not yet activated).
 | Feature | Detail |
 |---|---|
-| **Core** | FastAPI + LangGraph |
-| **Flow** | Bilingual French/Dutch lead qualification |
-| **Integrations** | Airtable CRM, Twilio |
-| **Security** | JWT auth, RBAC, CORS, injection-fix hardening |
+| **Core** | FastAPI + a deterministic state machine/YAML rules engine — the LLM only phrases replies, never decides |
+| **Flow** | Lead qualification, outbound campaign engine, human hand-off |
+| **Stack** | PostgreSQL, Redis, React ops dashboard (TanStack Query) |
+| **Security** | API-key auth, webhook signature verification, rate limiting |
+| **Quality** | 583 automated tests, incl. end-to-end golden conversation scenarios |
 
 ### 🧾 [AI Invoice Processing (n8n)](https://github.com/Yosra-Megbli/n8n-invoice-ai-agent)
 Automated PDF invoice pipeline with business-rule validation and reporting.
@@ -62,7 +63,7 @@ Automated PDF invoice pipeline with business-rule validation and reporting.
 | **Storage & Reporting** | PostgreSQL, Metabase dashboard |
 | **Alerts** | SMTP |
 
-### 🔍 [DocClassify AI — CNN + OCR + ERPNext](https://github.com/Yosra-Megbli/CNN-Fastapi-ERPNext)
+### 🔍 [DocClassify AI — CNN + OCR + ERPNext](https://github.com/Yosra-Megbli/CNN-Fastapi-ERPnext)
 AI document classification system with native ERPNext integration.
 | Feature | Detail |
 |---|---|
